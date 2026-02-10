@@ -1,13 +1,13 @@
 <?php
 //ejercicio 4
-$datosPersonales = [
-    "nombre" => "Carol Desireé",
-    "edad" => 33,
+$personalData = [
+    "name" => "Carol Desireé",
+    "age" => 33,
     "email" => "desireecarol@gmail.com",
-    "comida_favorita"=> "Pozole"];
+    "favorite_food"=> "Pozole"];
 
-foreach( $datosPersonales as $clave => $valor ) {
-echo $clave.": " . $valor . PHP_EOL;
+foreach( $personalData as $key => $value ) {
+echo $key.": " . $value . PHP_EOL;
 
 }
 ?>

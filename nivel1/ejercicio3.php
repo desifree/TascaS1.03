@@ -1,10 +1,10 @@
 <?php
 // Ejercicio 3:
-$array3 = ["hola", "php", "html", "hospital", "hotel", "huskie"];
+$words_list = ["hello", "php", "html", "hospital", "hotel", "huskie"];
 
-function todasContienen($palabras, $caracter) {
-    foreach($palabras as $palabra) {
-        if (strpos(strtolower($palabra), strtolower($caracter)) === false ) {
+function todasContienen($words, $caracter) {
+    foreach($words as $word) {
+        if (strpos(strtolower($word), strtolower($caracter)) === false ) {
             return false;
 
         }
@@ -12,8 +12,8 @@ function todasContienen($palabras, $caracter) {
     return true; 
 }
 
-echo todasContienen($array3, "h") ? "true" : "false";
+echo todasContienen($words_list, "h") ? "true" : "false";
 echo " ". PHP_EOL;
-echo todasContienen($array3, "l") ? "true" : "false";
+echo todasContienen($words_list, "l") ? "true" : "false";
 
 ?>
